@@ -1,70 +1,67 @@
 # Unit 18 PWA Homework: Online/Offline Budget Trackers
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+## Table of Contents
 
-Offline Functionality:
+1. [Description](#Description)
+2. [Criteria](#Criteria)
+3. [Installation](#Installation)
+4. [Usage](#Usage)
+5. [Contributing](#Contributing)
+6. [Issues](#Issues)
+7. [Credits](#Credits)
+8. [License](#License)
+9. [Questions](#Questions)
 
-  * Enter deposits offline
+## Description
 
-  * Enter expenses offline
+All we needed to do for this application was make the transactions that occur while offline persist to when the user comes back online. This uses a temporary store in the database to hold the information while the user is offline, then Posts the data to the database once it comes back online.
 
-When brought back online:
+[Deployed website](https://budget-tracker-thing.herokuapp.com/)
 
-  * Offline entries should be added to tracker.
+Example picture:
 
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+![View of homepage](./public/budgetpng)
 
-## Business Context
+## Criteria
 
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
-
-
-## Acceptance Criteria
 GIVEN a user is on Budget App without an internet connection
+
 WHEN the user inputs a withdrawal or deposit
+
 THEN that will be shown on the page, and added to their transaction history when their connection is back online.
 
-- - -
+## Installation
 
-## Commit Early and Often
+Files must be downloaded from Github. Then, run npm install to get the necessary node modules. Start mongod in a separate window. Please note the database does not have seed information. Last, run npm start.
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+A ready version is also available at the [deployed website](https://budget-tracker-thing.herokuapp.com/)
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Usage
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+This is an application where users can track their deposits and expenses and keep track of their total. The transactions and tracking can be made even while offline and will update once the application comes back online.
 
-* Follow these guidelines for committing:
+## Contributing
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+For contributions, please create a fork to work on then, when done, create a Pull Request.
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+## Issues
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
+Submit an Issue through Github for any bugs or problems.
 
-  * Test your application before you commit to ensure functionality at every step in the development process
+## Credits
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+Assignment was developed as part of the SMU Coding Bootcamp.
 
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
+## License
 
-## Submission on BCS
+This is covered under the <a href='https://opensource.org/licenses/ISC'>ISC</a> license.
 
-* You are required to submit the following:
+## Questions
 
-  * the URL to the deployed application
+Feel free to contact through the following with any questions:
 
-  * the URL to the Github repository
+Email: katherine@katherinehopkins.me
 
-- - -
-
-## Hint
-
-* In order to cache dynamic content, i.e. users' inputs for withdrawals or deposits, incorporate `indexedDB` from the previous module.
-
-* Use [Google](https://www.google.com) or another search engine to research this topic.
+Github: <a href='https://github.com/khopkins206'>khopkins206</a>
