@@ -22,7 +22,7 @@ All we needed to do for this application was make the transactions that occur wh
 
 Example picture:
 
-![View of homepage](./public/budgetpng)
+![View of homepage](./public/budget.png)
 
 ## Criteria
 
