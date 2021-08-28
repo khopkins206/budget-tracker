@@ -1,7 +1,7 @@
 let db;
 let budgetVersion;
 
-const request = indexedDB.open("BudgetDB", budgetVersion || 21);
+const request = indexedDB.open("BudgetDB", 25 || 21);
 
 request.onupgradeneeded = function (e) {
   db = e.target.result;
@@ -45,7 +45,7 @@ function checkDatabase() {
   };
 }
 
-request.onSuccess = function (e) {
+request.onsuccess = function (e) {
   console.log("Success!");
   db = e.target.result;
 
