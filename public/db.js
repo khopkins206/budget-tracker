@@ -33,7 +33,10 @@ function checkDatabase() {
         .then((response) => response.json())
         .then((res) => {
           if (res.length !== 0) {
-            transaction = db.transaction.objectStore("BudgetStore");
+            transaction = db.transaction.objectStore(
+              ["BudgetStore"],
+              "readwrite"
+            );
 
             const currentStore = transaction.objectStore("BudgetStore");
 
